@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>notes-app-fa</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<svg style="display: none;">
+    <symbol id="icon-plus" viewBox="0 0 40 40">
+        <rect x="18" y="8" width="4" height="24" fill="currentColor"/>
+        <rect x="8" y="18" width="24" height="4" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-close-24" viewBox="0 0 24 24">
+        <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-dots" viewBox="0 0 15 5" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2.5" r="1.5" fill="currentColor" />
+        <circle cx="7.5" cy="2.5" r="1.5" fill="currentColor" />
+        <circle cx="13" cy="2.5" r="1.5" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-edit" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z" fill="currentColor"/>
+        <path d="M20.71 7.04a1.004 1.004 0 0 0 0-1.42l-2.34-2.34a1.004 1.004 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-delete" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-0.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" fill="currentColor"/>
+    </symbol>
+</svg>
+
+
+
+<div class="container">
+    <ul class="list">
+        <li class="item add-box">
+            <span class="add-box__icon">
+                <svg width="40" height="40">
+                    <use href="#icon-plus" />
+                </svg>
+            </span>
+            <p>اضافه کردن یادداشت جدید</p>
+        </li>
+        <!--<li class="item note-box">
+            <h4 class="note-box__header">
+                <span class="note-box__title">عنوان</span>
+                <span class="note-box__time">23:34</span>
+            </h4>
+            <div class="note-box__caption">توضیحات</div>
+            <div class="note-box__footer">
+                <button type="button" class="note-box__icon">
+                    <svg width="15" height="5">
+                        <use href="#icon-dots" />
+                    </svg>
+                </button>
+                <span class="note-box__date">12 اردیبهشت 1405</span>
+            </div>
+            <ul class="menu">
+                <li class="menu__item">
+                    <svg width="20" height="20">
+                        <use href="#icon-edit" />
+                    </svg>
+                    ویرایش
+                </li>
+                <li class="menu__item">
+                    <svg width="20" height="20">
+                        <use href="#icon-delete" />
+                    </svg>
+                    حذف
+                </li>
+            </ul>
+        </li>-->
+    </ul>
+</div>
+
+<div class="cover">
+    <div class="popup">
+        <div class="popup__header">
+            <button type="button" class="popup_close">
+                <svg width="24" height="24">
+                    <use href="#icon-close-24" />
+                </svg>
+            </button>
+            <p></p>
+        </div>
+        <form action="#" class="popup-form">
+            <div class="popup-form__row">
+                <label class="popup-form__label" for="input-title">عنوان</label>
+                <input type="text" id="input-title" class="popup-form__input">
+            </div>
+            <div class="popup-form__row">
+                <label class="popup-form__label" for="textarea-caption">توضیحات</label>
+                <textarea class="popup-form__textarea" id="textarea-caption"></textarea>
+            </div>
+            <button type="submit" class="popup-form__submit"></button>
+        </form>
+    </div>
+</div>
+<script src="js/ploggins/sweetalert2.js"></script>
+<script src="js/ploggins/jalali-moment.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
